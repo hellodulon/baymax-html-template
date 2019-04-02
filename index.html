@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -8,16 +9,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="Theme/css/bootstrap/css/bootstrap.min.css">
+    <!-- Font-Awesome Icon -->
     <link rel="stylesheet" href="Theme/font/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--Themify Icon-->
+    <link rel="stylesheet" href="Theme/font/themify/themify-icons.css">
+    <!-- Animated CSS -->
+    <link rel="stylesheet" href="Theme/css/animate.css/animate.css">
+    <link rel="stylesheet" href="Theme/css/animate.css/animate.min.css">
+    <!-- Owl-Carousel CSS -->
+    <link rel="stylesheet" href="Theme/vendors/owl-carousel/owl.carousel.min.css">
     <!-- main css -->
-    <link rel="stylesheet" type="text/css"  href="Theme/css/main.css">
-    
+    <link rel="stylesheet" href="Theme/css/main.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="Theme/css/responsive.css">
+
 </head>
+
 <body>
 
-    <!--================Header Area =================-->
-    <section>
-        <div class="section-shaped">
+    <!--================Hero Area =================-->
+    <section class="hero">
+        <div class="section-shaped p-40">
             <div class="shape shape-style-1 shape-primary">
                 <span class="span-150"></span>
                 <span class="span-50"></span>
@@ -32,7 +44,7 @@
             </div>
             <div class="section_gap">
                 <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-sm-7">
                         <div class="box-query">
                             <h1>
                                 <span>BAY</span>MAX
@@ -40,87 +52,181 @@
                             <h5>
                                 The best bus tracking app
                             </h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                Molestiae magnam sequi velit architecto odit porro deserunt 
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Molestiae magnam sequi velit architecto odit porro deserunt
                                 perferendis pariatur voluptatibus quae.</p>
                             <br>
                             <div class="dwn-sec">
-                                <h2>
+                                <h2 class="mb-10">
                                     DOWNLOAD NOW!!!
                                 </h2>
-                                <span>
-                                    <a href="#">
-                                        <img src="Theme/images/android.png" alt="android" srcset="">
+                                <div class="slider-action-btn">
+                                    <a href="#" class="btn softo-solid-btn">
+                                        <i class="fa fa-apple"></i> 
+                                        Appstore
                                     </a>
-                                </span>
-                                <span>
-                                    <a href="#">
-                                        <img src="Theme/images/apple.png" alt="android" srcset="">
+                                    <a href="#" class="btn btn-icon">
+                                        <i class="fa fa-android"></i>
                                     </a>
-                                </span>
+                                    <a href="" data-toggle="modal" data-target="#myModal" class="video">
+                                        <span class="ti-control-play"></span>
+                                    </a>
+                                    <!-- Model Video -->
+                                    <div class="modal" id="myModal">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                    <button type="button" 
+                                                    class="close text-right clr-themewhite" 
+                                                    data-dismiss="modal">&times;</button>
+                                                <!-- Modal body -->
+                                                <div class="modal-body">
+                                                    <div class="row">
+                                                        <div class="col-md-12">
+                                                            <div class="video-block">
+                                                                <iframe src="https://www.youtube.com/embed/ojfm881qwGk" 
+                                                                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                                                                </iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-sm-5">
                         <div class="box-img">
-                            <img src="Theme/images/head-1.png" alt="">
+                            <img class="animated infinite fetureanimate" src="Theme/images/device-hero.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- SVG operatior -->
-            <div class="separator">
+            <!-- <div class="separator">
                 <svg x="0" y="0" viewBox="0 0 2560 100" 
                 preserveAspectRatio="none" 
                 version="1.1" xmlns="http://www.w3.org/2000/svg">
                     <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
                 </svg>
+            </div> -->
+
+            <!-- Mouse -->
+            <a class="scroll-link" href="#content">
+                <svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+                    <g fill="none" fill-rule="evenodd">
+                        <rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36" />
+                        <circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF" />
+                    </g>
+                </svg>
+            </a>
+
+            <div class="section-shape">
+                <img src="Theme/images/hero-bg/waves-shape.svg" alt="shape image">
             </div>
         </div>
     </section>
 
     <!--================Navbar Area =================-->
-    <section>
-        <div class="nav-section">
+    <section class="nav-section">
+        <div class="section_gap ptb-0 mt-20">
+            <nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<a class="navbar-brand" href="index.html">
+                        BayMax
+                    </a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+							<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+        </div>
+    </section>
+
+    <!-- ===================start promo section=================== -->
+    <section class="promo-section">
+        <div class="section_gap">
             <div class="row">
-                <div class="col-md-6">
-                    <h4>BAYMAX</h4>
+                <div class="col-md-3 col-sm-6">
+                    <div class="bg-secondary single-promo-section text-center">
+                        <div class="single-promo-content">
+                            <span class="ti-face-smile"></span>
+                            <h6>Easy To Use</h6>
+                            <p>Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet
+                                tincidunt.
+                            </p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <ul>
-                        <li>
-                            <a href="#">Features</a>
-                        </li>
-                        <li>
-                            <a href="#">Screens</a>
-                        </li>
-                        <li>
-                            <a href="#">Reviews</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>
-                    </ul>
+                <div class="col-md-3 col-sm-6">
+                    <div class="bg-secondary single-promo-section text-center">
+                        <div class="single-promo-content">
+                            <span class="ti-vector"></span>
+                            <h6>Awesome Design</h6>
+                            <p>Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet
+                                tincidunt.</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="bg-secondary single-promo-section text-center">
+                        <div class="single-promo-content">
+                            <span class="ti-palette"></span>
+                            <h6>Easy To Customize</h6>
+                            <p>Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet
+                                tincidunt.</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="bg-secondary single-promo-section text-center">
+                        <div class="single-promo-content">
+                            <span class="ti-headphone-alt"></span>
+                            <h6>24/7 Support</h6>
+                            <p>Lorem ipsum dolor sit amet, eam ex probo tation tractatos. Ut vel hinc solet
+                                tincidunt.</p>
+                        </div>
+                        <div class="line"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+    <!--end promo section-->
+
+
     <!-- =====================Demo ARea====================== -->
-    <section class="demo-area">
+    <!-- <section class="demo-area bg-secondary">
         <div class="section_gap">
             <div class="main-title">
                 <h1>
-                    Feature Overview
+                    See it in action
                     <span></span>
                 </h1>
                 <p>Learn more about the awesome features off best app</p>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-md-12">
                     <div class="video-testimonial-block">
                         <div class="video-thumbnail">
-                            <img src="Theme/images/tab-2.png" 
-                            alt="">
+                            <img src="Theme/images/tab-2.png" alt="">
                             <div class="video">
                                 <iframe src="https://www.youtube.com/embed/KEiAVv1UNac" allowfullscreen>
                                 </iframe>
@@ -133,23 +239,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
     <!-- =====================Feature Area=================== -->
     <section class="feature">
-        <div class="section-shaped">
-            <div class="shape shape-style-1 shape-primary">
-                <span class="span-150"></span>
-                <span class="span-50"></span>
-                <span class="span-50"></span>
-                <span class="span-75"></span>
-                <span class="span-100"></span>
-                <span class="span-75"></span>
-                <span class="span-50"></span>
-                <span class="span-100"></span>
-                <span class="span-50"></span>
-                <span class="span-100"></span>
-            </div>
-            <div class="section_gap">
+        <div class="section-shaped bg-secondary">
+            <div class="section_gap plr-70">
                 <div class="main-title">
                     <h1>
                         Feature Overview
@@ -161,67 +256,710 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="section-icon">
-                                <i class="fa fa-download"></i>
+                                <i class="ti-cloud-down"></i>
                             </div>
                             <div class="title-md">
                                 <h4>Easy to setup</h4>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Ipsam enim quos officiis sunt sed consectetur provident 
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ipsam enim quos officiis sunt sed consectetur provident
                                     porro temporibus ratione expedita.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="section-icon">
-                                <i class="fa fa-download"></i>
+                                <i class="ti-face-smile"></i>
                             </div>
                             <div class="title-md">
                                 <h4>Social Connect</h4>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Ipsam enim quos officiis sunt sed consectetur provident 
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ipsam enim quos officiis sunt sed consectetur provident
                                     porro temporibus ratione expedita.
                                 </p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="section-icon">
-                                <i class="fa fa-download"></i>
+                                <i class="ti-support"></i>
                             </div>
                             <div class="title-md">
                                 <h4>Free Support</h4>
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                    Ipsam enim quos officiis sunt sed consectetur provident 
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                    Ipsam enim quos officiis sunt sed consectetur provident
                                     porro temporibus ratione expedita.
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- SVG operatior -->
-                <div class="separator">
-                    <svg x="0" y="0" viewBox="0 0 2560 100" 
-                    preserveAspectRatio="none" 
-                    version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-                    </svg>
+                <div class="section-main mt-50">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <ul class="left-floating">
+                                <li>
+                                    <div class="section-icon">
+                                        <i class="ti-user"></i>
+                                    </div>
+                                    <div class="title-sm">
+                                        <h4>Social Conects</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Ducimus unde perferendis aliquam.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section-icon">
+                                        <i class="ti-face-smile"></i>
+                                    </div>
+                                    <div class="title-sm">
+                                        <h4>Store Locator</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Ducimus unde perferendis aliquam.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section-icon">
+                                        <i class="ti-face-smile"></i>
+                                    </div>
+                                    <div class="title-sm">
+                                        <h4>Social Conects</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Ducimus unde perferendis aliquam.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="lst-img">
+                                <img src="Theme/images/head-3.png" alt="demo-image">
+                                <span class="ripple-1"></span>
+                                <span class="ripple-2"></span>
+                                <span class="ripple-3"></span>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <ul class="right-floating">
+                                <li>
+                                    <div class="section-icon">
+                                        <i class="ti-face-smile"></i>
+                                    </div>
+                                    <div class="title-sm">
+                                        <h4>Social Conects</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Ducimus unde perferendis aliquam.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section-icon">
+                                        <i class="ti-face-smile"></i>
+                                    </div>
+                                    <div class="title-sm">
+                                        <h4>Social Conects</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Ducimus unde perferendis aliquam.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="section-icon">
+                                        <i class="ti-face-smile"></i>
+                                    </div>
+                                    <div class="title-sm">
+                                        <h4>Social Conects</h4>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Ducimus unde perferendis aliquam.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="separator-tp">
-                    <svg x="0" y="0" viewBox="0 0 2560 100" 
-                    preserveAspectRatio="none" 
-                    version="1.1" xmlns="http://www.w3.org/2000/svg">
-                        <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-                    </svg>
+            </div>
+
+            <div class="section-shape">
+                <img src="Theme/images/hero-bg/waves-shape.svg" alt="shape image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Some More Feature =================== -->
+    <section class="more-feature">
+        <div class="section-no-shaped">
+            <div class="section_gap">
+                <div class="main-title">
+                    <h1>
+                        Some More Feature
+                        <span></span>
+                    </h1>
+                    <p>Learn more about the awesome features off best app</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="lst-img bg-effect">
+                            <img src="Theme/images/head-5.png" alt="demo-image" style="width:50%; height:50%;">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <ul class="right-floating">
+                            <li>
+                                <div class="title-md mb-10">
+                                    <h4>Messages Inbox</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Ducimus unde perferendis aliquam.
+                                    </p>
+                                </div>
+                                <div class="section-icon">
+                                    <i class="ti-face-smile"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-md mb-10">
+                                    <h4>Live Chat</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Ducimus unde perferendis aliquam.
+                                    </p>
+                                </div>
+                                <div class="section-icon">
+                                    <i class="ti-palette"></i>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title-md mb-10">
+                                    <h4>Much More</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Ducimus unde perferendis aliquam.
+                                    </p>
+                                </div>
+                                <div class="section-icon">
+                                    <i class="ti-face-smile"></i>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- jQuery first, then Bootstrap JS -->
+    <!-- ===================== Extended Feature =================== -->
+    <section class="ext-feature">
+        <div class="section-shaped shape-primary clr-themewhite">
+            <div class="section_gap">
+                <div class="main-title">
+                    <h1 class=" clr-themewhite">
+                        Extended Feature
+                        <span></span>
+                    </h1>
+                    <p class="clr-themewhite">Learn more about the awesome features off best app</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <ul class="left-floating">
+                            <li>
+                                <div class="title-md">
+                                    <h4 class=" clr-themewhite">Easy to setup</h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Vel, voluptatem veniam! Dolor rem explicabo iusto nam autem 
+                                        quasi in minima! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Reprehenderit, natus!
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="title-sm">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </li>
+                                    <li class="title-sm">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </li>
+                                    <li class="title-sm">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </li>
+                                    <li class="title-sm">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </li>
+                                    <li class="title-sm">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </li>
+                                    <li class="title-sm">
+                                        <p>Lorem ipsum dolor sit.</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="lst-img bg-effect">
+                            <img src="Theme/images/head-2.png" alt="demo-image" style="width:70%; height:70%;">
+                            <span class="ripple"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-shape">
+                <img src="Theme/images/hero-bg/waves-shape.svg" alt="shape image">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== App Screenshot =================== -->
+    <section class="screenshot">
+        <div class="section-no-shaped">
+            <div class="section_gap">
+                <div class="main-title mb-0">
+                    <h1>
+                        App Screenshot
+                        <span></span>
+                    </h1>
+                    <p>Learn more about the awesome features off best app</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-sm-12">
+                        <div class="active-slider owl-carousel" data-slider-id="1">
+                            <!-- single testimonial -->
+                            <div class="slider-section">
+                                <div class="slider-img">
+                                    <img src="Theme/images/head-5.png" alt="slider-1">
+                                </div>
+                            </div>
+    
+                            <div class="slider-section">
+                                <div class="slider-img">
+                                    <img src="Theme/images/head-5.png" alt="slider-2">
+                                </div>
+                            </div>
+
+                            <div class="slider-section">
+                                <div class="slider-img">
+                                    <img src="Theme/images/head-5.png" alt="slider-3">
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================Our Team==================== -->
+    <section class="team">
+        <div class="section-shaped bg-secondary">
+            <div class="section_gap plr-70">
+                <div class="main-title">
+                    <h1>
+                        Our team
+                        <span></span>
+                    </h1>
+                    <p>Learn more about the awesome features off best app</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="box">
+                            <img src="Theme/images/team/avatar-1.png">
+                            <div class="box-content">
+                                <div class="inner-content">
+                                    <h3 class="title">Azharul</h3>
+                                    <span class="post">Full-Stack Developer</span>
+                                    <ul class="icon">
+                                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <img src="Theme/images/team/avatar-2.png">
+                            <div class="box-content">
+                                <div class="inner-content">
+                                    <h3 class="title">Foysal</h3>
+                                    <span class="post">Full-Stack Developer</span>
+                                    <ul class="icon">
+                                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <img src="Theme/images/team/avatar-4.png">
+                            <div class="box-content">
+                                <div class="inner-content">
+                                    <h3 class="title">Riya</h3>
+                                    <span class="post">Front-End Developer</span>
+                                    <ul class="icon">
+                                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box">
+                            <img src="Theme/images/team/avatar-3.png">
+                            <div class="box-content">
+                                <div class="inner-content">
+                                    <h3 class="title">Razin</h3>
+                                    <span class="post">Aurdino Developer</span>
+                                    <ul class="icon">
+                                        <li><a href="#"><i class="fa fa-search"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-link"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ Start Testimonial Area =================-->
+    <section class="testimonial-area">
+        <div class="section-no-shaped">
+            <div class="section_gap">
+                <div class="main-title">
+                    <h1>
+                        User Review
+                        <span></span>
+                    </h1>
+                    <p>Learn more about the awesome features off best app</p>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <div class="testimonial-slider owl-carousel" data-slider-id="1">
+                            <!-- single testimonial -->
+                            <div class="single_testimonial">
+                                <div class="testimonial_content">
+                                    <span class="ti-quote-right"></span>
+                                    <p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+                                        it, you travel across her face</p>
+                                </div>
+                                <div class="testimonial_head">
+                                    <img src="Theme/images/team/avatar-1.png" alt="">
+                                    <h4>Fanny Spencer</h4>
+                                    <div class="review">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="single_testimonial">
+                                <div class="testimonial_content">
+                                    <span class="ti-quote-right"></span>
+                                    <p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+                                        it, you travel across her face</p>
+                                </div>
+                                <div class="testimonial_head">
+                                    <img src="Theme/images/team/avatar-1.png" alt="">
+                                    <h4>Fanny Spencer</h4>
+                                    <div class="review">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="single_testimonial">
+                                <div class="testimonial_content">
+                                    <span class="ti-quote-right"></span>
+                                    <p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+                                        it, you travel across her face</p>
+                                </div>
+                                <div class="testimonial_head">
+                                    <img src="Theme/images/team/avatar-1.png" alt="">
+                                    <h4>Fanny Spencer</h4>
+                                    <div class="review">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="single_testimonial">
+                                <div class="testimonial_content">
+                                    <span class="ti-quote-right"></span>
+                                    <p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about
+                                        it, you travel across her face</p>
+                                </div>
+                                <div class="testimonial_head">
+                                    <img src="Theme/images/team/avatar-1.png" alt="">
+                                    <h4>Fanny Spencer</h4>
+                                    <div class="review">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </section>
+
+    <!--===================== Download Section ======================-->
+    <section class="download-section">
+        <div class="shape-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="download-app-img">
+                            <img src="Theme/images/head-3.png" alt="app download" class="img-responsive" style="width:50%; height: 80%">
+                        </div>
+                    </div>
+                    <div class="col-md-7 col-sm-12">
+                        <div class="download-app-text">
+                            <h3>Get The App Now !</h3>
+                            <p>Seamlessly transform timely e-commerce for diverse leadership skills. Conveniently
+                                reconceptualize go forward expertise without extensible applications.
+                                Phosfluorescently.</p>
+                            <div class="download-app-button">
+                                <a href="#" class="download-btn hover-active">
+                                    <span class="ti-apple"></span>
+                                    <p>
+                                        <small>Download On</small>
+                                        <br> App Store
+                                    </p>
+                                </a>
+                                <a href="#" class="download-btn">
+                                    <span class="ti-android"></span>
+                                    <p>
+                                        <small>Git It On</small>
+                                        <br>Google Play
+                                    </p>
+                                </a>
+                                <a href="#" class="download-btn">
+                                    <span class="ti-microsoft"></span>
+                                    <p>
+                                        <small>Download On</small>
+                                        <br> Windows
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shape-img">
+                <img src="Theme/images/hero-bg/bg-wave-sym (1).png" alt="shape image" class="img-responsive shape-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <div class="section-shaped">
+            <div class="section_gap">
+                <div class="main-title">
+                    <h1>
+                        our team
+                        <span></span>
+                    </h1>
+                    <p>Learn more about the awesome features off best app</p>
+                </div>
+                <div class="row">
+                    <div class="section-top col-md-12">
+                        <ul>
+                            <li>
+                                <div class="section-icon">
+                                    <span class="ti-email"></span>
+                                </div>
+                                <div class="title-md">
+                                    <h4>Email</h4>
+                                    <p>
+                                        anonymous@orbslab.com
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section-icon">
+                                    <span class="ti-mobile"></span>
+                                </div>
+                                <div class="title-md">
+                                    <h4>Contact</h4>
+                                    <p>+123456789</p>
+                                    <p>+987654321</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="section-icon">
+                                    <span class="ti-location-pin"></span>
+                                </div>
+                                <div class="title-md">
+                                    <h4>Location</h4>
+                                    <p>Lorem ipsum dolor sit amet.</p>
+                                    <p>Lorem, ipsum dolor.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="section-btm">
+                            <div class="title-md text-center p-40">
+                                <h4>
+                                    got query
+                                </h4>
+                                <p class="clr-dark">Fill it UPI</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <form action="#" method="post" class="contact-us-form" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="name"
+                                        placeholder="Enter name" required="required">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="email"
+                                        placeholder="Enter email" required="required">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="number" name="phone" value="" class="form-control"
+                                        id="phone" placeholder="Your Phone">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-xs-12">
+                                    <div class="form-group">
+                                        <input type="text" name="company" value="" size="40"
+                                        class="form-control" id="company" placeholder="Your Company">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 col-xs-12">
+                                    <div class="form-group">
+                                        <textarea name="message" id="message" class="form-control" 
+                                        placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 mt-20">
+                                    <button type="submit" class="btn softo-solid-btn"
+                                    id="btnContactUs">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--=========== Footer section ==============-->
+    <footer class="footer-section">
+        <div class="section-shaped">
+            <div class="section_gap bg-secondary">
+                <div class="main-title mb-30">
+                    <h1>
+                        Baymax
+                        <span></span>
+                    </h1>
+                    <p>Learn more about the awesome features off best app</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="footer-single-col text-center">
+                            <div class="title-md">
+                                <h4 class="clr-dark">
+                                    we are social
+                                </h4>
+                                <p class="clr-offwhite">connect with us to keep up to date</p>
+                            </div>
+                            <div class="footer-social-list">
+                                <ul>
+                                    <li>
+                                        <a href="#"> 
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="copyright-text">
+                                <p>&copy; copyright <a href="#">OrbsLab</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--end footer section-->
+
+
+    <!-- jQuery first, then Bootstrap JS, then Main JS, then SASS JS-->
     <script src="Theme/js/jquery-3.3.1.min.js"></script>
     <script src="Theme/css/bootstrap/js/bootstrap.min.js"></script>
+    <script src="Theme/vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="Theme/js/main.js"></script>
+    <!-- <script src="Theme/js/sass.min.js"></script> -->
+
 </body>
+
 </html>

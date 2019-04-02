@@ -8,6 +8,7 @@
  * Copyright (c) 2017 Daniel Eden
  */
 
+
 .animated {
   animation-duration: 1s;
   animation-fill-mode: both;
@@ -28,6 +29,23 @@
   animation-duration: .75s;
 }
 
+@keyframes fetureanimate {
+  0%,
+  100% {
+      -webkit-transform: translateY(-40px);
+      transform: translateY(-40px)
+  }
+  50% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px)
+  }
+}
+
+.fetureanimate{
+  animation: fetureanimate;
+  transform-origin: center bottom;
+
+}
 @keyframes bounce {
   from, 20%, 53%, 80%, to {
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);

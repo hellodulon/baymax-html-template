@@ -1,0 +1,79 @@
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 414px) and (min-width: 376px) {
+    
+}
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 480px) and (min-width: 415px) {
+    
+}
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 568px) and (min-width: 481px) {
+    
+}
+/* Extra Small Devices, Phones */
+@media screen and (max-width: 640px) and (min-width: 569px) {
+   
+}
+/* Small Devices, Tablets */
+@media screen and (max-width: 720px) and (min-width: 641px) {
+    
+}
+/* Small Devices, Tablets */
+@media screen and (max-width: 767px) {
+    /* Feature Overview */
+    .feature .section-top .col-md-4:nth-child(2)[class*="col-"] {
+        margin-top: 0;
+    }
+    .feature .section-top .title-md{
+        padding-bottom: 40px;
+    }
+    .feature .left-floating,
+    .feature .right-floating {
+        text-align: center;
+    }
+    .feature .left-floating li,
+    .feature .right-floating li  {
+        padding: 20px 0;
+    }
+
+    .feature .left-floating,
+    .feature .right-floating{
+        display: flex !important;
+    }
+    .feature .left-floating .section-icon i,
+    .feature .right-floating .section-icon i{
+        position: relative;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .feature .left-floating li:nth-child(2) {
+        margin-right: 0;
+    }
+    .feature .right-floating li:nth-child(2) {
+        margin-left: 0;
+    }
+    .feature .lst-img {
+        display: none;
+    }
+}
+/* Medium Devices, Desktops */
+@media screen and (max-width: 992px) and (min-width: 769px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1024px) and (min-width: 993px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1080px) and (min-width: 1025px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1152px) and (min-width: 1081px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1280px) and (min-width: 1153px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1366px) and (min-width: 1281px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1440px) and (min-width: 1367px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1600px) and (min-width: 1441px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1680px) and (min-width: 1601px) {}
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1920px) and (min-width: 1681px) {}
