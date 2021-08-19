@@ -1,5 +1,5 @@
-# Baymax Applanding Web Template
-This app accompanies the Ionic component documentation.
+# Baymax - Applanding HTML Template
+This is a demo app landing HTML web template. You can use this template for learning purposes only.  Thank you!
 
 ### Installation & Development
 1. clone this repo: `https://github.com/DulonBD/baymax-html-template.git`
